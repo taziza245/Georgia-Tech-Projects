@@ -1,0 +1,1974 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0812.0353                               -->
+<workbook original-version='18.1' source-build='2022.2.1 (20222.22.0812.0353)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='input_long' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='-73.94106415099996'>
+        <calculation class='tableau' formula='-73.94106415099996' />
+      </column>
+      <column caption='input_lat' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='40.81087724100007'>
+        <calculation class='tableau' formula='40.81087724100007' />
+      </column>
+      <column caption='radius (in km)' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='2.'>
+        <calculation class='tableau' formula='2.' />
+      </column>
+    </datasource>
+    <datasource caption='NYPD_Complaint_Data_Historic' inline='true' name='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='NYPD_Complaint_Data_Historic' name='textscan.05fibks04f0dgr1gkawp9026ewh2'>
+            <connection class='textscan' directory='D:/cse6242/interactive barplot' filename='NYPD_Complaint_Data_Historic.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.05fibks04f0dgr1gkawp9026ewh2' name='NYPD_Complaint_Data_Historic.csv' table='[NYPD_Complaint_Data_Historic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CMPLNT_NUM' ordinal='0' />
+            <column datatype='date' name='CMPLNT_FR_DT' ordinal='1' />
+            <column datatype='datetime' name='CMPLNT_FR_TM' ordinal='2' />
+            <column datatype='date' name='CMPLNT_TO_DT' ordinal='3' />
+            <column datatype='datetime' name='CMPLNT_TO_TM' ordinal='4' />
+            <column datatype='integer' name='ADDR_PCT_CD' ordinal='5' />
+            <column datatype='date' name='RPT_DT' ordinal='6' />
+            <column datatype='integer' name='KY_CD' ordinal='7' />
+            <column datatype='string' name='OFNS_DESC' ordinal='8' />
+            <column datatype='integer' name='PD_CD' ordinal='9' />
+            <column datatype='string' name='PD_DESC' ordinal='10' />
+            <column datatype='string' name='CRM_ATPT_CPTD_CD' ordinal='11' />
+            <column datatype='string' name='LAW_CAT_CD' ordinal='12' />
+            <column datatype='string' name='BORO_NM' ordinal='13' />
+            <column datatype='string' name='LOC_OF_OCCUR_DESC' ordinal='14' />
+            <column datatype='string' name='PREM_TYP_DESC' ordinal='15' />
+            <column datatype='string' name='JURIS_DESC' ordinal='16' />
+            <column datatype='integer' name='JURISDICTION_CODE' ordinal='17' />
+            <column datatype='string' name='PARKS_NM' ordinal='18' />
+            <column datatype='string' name='HADEVELOPT' ordinal='19' />
+            <column datatype='integer' name='HOUSING_PSA' ordinal='20' />
+            <column datatype='integer' name='X_COORD_CD' ordinal='21' />
+            <column datatype='integer' name='Y_COORD_CD' ordinal='22' />
+            <column datatype='string' name='SUSP_AGE_GROUP' ordinal='23' />
+            <column datatype='string' name='SUSP_RACE' ordinal='24' />
+            <column datatype='string' name='SUSP_SEX' ordinal='25' />
+            <column datatype='integer' name='TRANSIT_DISTRICT' ordinal='26' />
+            <column datatype='real' name='Latitude' ordinal='27' />
+            <column datatype='real' name='Longitude' ordinal='28' />
+            <column datatype='string' name='Lat_Lon' ordinal='29' />
+            <column datatype='string' name='PATROL_BORO' ordinal='30' />
+            <column datatype='string' name='STATION_NAME' ordinal='31' />
+            <column datatype='string' name='VIC_AGE_GROUP' ordinal='32' />
+            <column datatype='string' name='VIC_RACE' ordinal='33' />
+            <column datatype='string' name='VIC_SEX' ordinal='34' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.05fibks04f0dgr1gkawp9026ewh2' name='NYPD_Complaint_Data_Historic.csv' table='[NYPD_Complaint_Data_Historic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CMPLNT_NUM' ordinal='0' />
+            <column datatype='date' name='CMPLNT_FR_DT' ordinal='1' />
+            <column datatype='datetime' name='CMPLNT_FR_TM' ordinal='2' />
+            <column datatype='date' name='CMPLNT_TO_DT' ordinal='3' />
+            <column datatype='datetime' name='CMPLNT_TO_TM' ordinal='4' />
+            <column datatype='integer' name='ADDR_PCT_CD' ordinal='5' />
+            <column datatype='date' name='RPT_DT' ordinal='6' />
+            <column datatype='integer' name='KY_CD' ordinal='7' />
+            <column datatype='string' name='OFNS_DESC' ordinal='8' />
+            <column datatype='integer' name='PD_CD' ordinal='9' />
+            <column datatype='string' name='PD_DESC' ordinal='10' />
+            <column datatype='string' name='CRM_ATPT_CPTD_CD' ordinal='11' />
+            <column datatype='string' name='LAW_CAT_CD' ordinal='12' />
+            <column datatype='string' name='BORO_NM' ordinal='13' />
+            <column datatype='string' name='LOC_OF_OCCUR_DESC' ordinal='14' />
+            <column datatype='string' name='PREM_TYP_DESC' ordinal='15' />
+            <column datatype='string' name='JURIS_DESC' ordinal='16' />
+            <column datatype='integer' name='JURISDICTION_CODE' ordinal='17' />
+            <column datatype='string' name='PARKS_NM' ordinal='18' />
+            <column datatype='string' name='HADEVELOPT' ordinal='19' />
+            <column datatype='integer' name='HOUSING_PSA' ordinal='20' />
+            <column datatype='integer' name='X_COORD_CD' ordinal='21' />
+            <column datatype='integer' name='Y_COORD_CD' ordinal='22' />
+            <column datatype='string' name='SUSP_AGE_GROUP' ordinal='23' />
+            <column datatype='string' name='SUSP_RACE' ordinal='24' />
+            <column datatype='string' name='SUSP_SEX' ordinal='25' />
+            <column datatype='integer' name='TRANSIT_DISTRICT' ordinal='26' />
+            <column datatype='real' name='Latitude' ordinal='27' />
+            <column datatype='real' name='Longitude' ordinal='28' />
+            <column datatype='string' name='Lat_Lon' ordinal='29' />
+            <column datatype='string' name='PATROL_BORO' ordinal='30' />
+            <column datatype='string' name='STATION_NAME' ordinal='31' />
+            <column datatype='string' name='VIC_AGE_GROUP' ordinal='32' />
+            <column datatype='string' name='VIC_RACE' ordinal='33' />
+            <column datatype='string' name='VIC_SEX' ordinal='34' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMPLNT_NUM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CMPLNT_NUM]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>CMPLNT_NUM</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMPLNT_FR_DT</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CMPLNT_FR_DT]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>CMPLNT_FR_DT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMPLNT_FR_TM</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[CMPLNT_FR_TM]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>CMPLNT_FR_TM</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMPLNT_TO_DT</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CMPLNT_TO_DT]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>CMPLNT_TO_DT</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMPLNT_TO_TM</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[CMPLNT_TO_TM]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>CMPLNT_TO_TM</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADDR_PCT_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ADDR_PCT_CD]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>ADDR_PCT_CD</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RPT_DT</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[RPT_DT]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>RPT_DT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KY_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KY_CD]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>KY_CD</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OFNS_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OFNS_DESC]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>OFNS_DESC</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PD_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PD_CD]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>PD_CD</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PD_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PD_DESC]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>PD_DESC</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRM_ATPT_CPTD_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CRM_ATPT_CPTD_CD]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>CRM_ATPT_CPTD_CD</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAW_CAT_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LAW_CAT_CD]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>LAW_CAT_CD</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BORO_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BORO_NM]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>BORO_NM</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOC_OF_OCCUR_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LOC_OF_OCCUR_DESC]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>LOC_OF_OCCUR_DESC</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREM_TYP_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PREM_TYP_DESC]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>PREM_TYP_DESC</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JURIS_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JURIS_DESC]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>JURIS_DESC</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JURISDICTION_CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JURISDICTION_CODE]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>JURISDICTION_CODE</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PARKS_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PARKS_NM]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>PARKS_NM</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HADEVELOPT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HADEVELOPT]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>HADEVELOPT</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUSING_PSA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOUSING_PSA]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>HOUSING_PSA</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X_COORD_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X_COORD_CD]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>X_COORD_CD</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y_COORD_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Y_COORD_CD]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>Y_COORD_CD</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUSP_AGE_GROUP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUSP_AGE_GROUP]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>SUSP_AGE_GROUP</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUSP_RACE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUSP_RACE]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>SUSP_RACE</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUSP_SEX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUSP_SEX]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>SUSP_SEX</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRANSIT_DISTRICT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TRANSIT_DISTRICT]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>TRANSIT_DISTRICT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat_Lon</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lat_Lon]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>Lat_Lon</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PATROL_BORO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PATROL_BORO]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>PATROL_BORO</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATION_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATION_NAME]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>STATION_NAME</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIC_AGE_GROUP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIC_AGE_GROUP]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>VIC_AGE_GROUP</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIC_RACE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIC_RACE]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>VIC_RACE</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIC_SEX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIC_SEX]</local-name>
+            <parent-name>[NYPD_Complaint_Data_Historic.csv]</parent-name>
+            <remote-alias>VIC_SEX</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Addr Pct Cd' datatype='integer' name='[ADDR_PCT_CD]' role='measure' type='quantitative' />
+      <column caption='Boro Nm' datatype='string' name='[BORO_NM]' role='dimension' type='nominal' />
+      <column caption='Cmplnt Fr Dt' datatype='date' name='[CMPLNT_FR_DT]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Cmplnt Fr Tm' datatype='datetime' name='[CMPLNT_FR_TM]' role='dimension' type='ordinal' />
+      <column caption='Cmplnt Num' datatype='integer' name='[CMPLNT_NUM]' role='dimension' type='ordinal' />
+      <column caption='Cmplnt To Dt' datatype='date' name='[CMPLNT_TO_DT]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Cmplnt To Tm' datatype='datetime' name='[CMPLNT_TO_TM]' role='dimension' type='ordinal' />
+      <column caption='Crm Atpt Cptd Cd' datatype='string' name='[CRM_ATPT_CPTD_CD]' role='dimension' type='nominal' />
+      <column caption='crime_nearby' datatype='boolean' name='[Calculation_2079537154872627200]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_2079537154880253955] &lt; [Parameters].[Parameter 3] THEN TRUE ELSE FALSE END' />
+      </column>
+      <column caption='dlat' datatype='real' name='[Calculation_2079537154876203009]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RADIANS([Latitude]) - RADIANS([Parameters].[Parameter 2])' />
+      </column>
+      <column caption='dlon' datatype='real' name='[Calculation_2079537154880131074]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RADIANS([Longitude]) - RADIANS([Parameters].[Parameter 1])' />
+      </column>
+      <column caption='distance_to_crime' datatype='real' name='[Calculation_2079537154880253955]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='63788.8 * 2 * ASIN(SQRT(SQUARE(SIN([Calculation_2079537154876203009]/2)) + COS([Parameters].[Parameter 2]) * COS([Latitude]) * SQUARE(SIN([Calculation_2079537154880131074]/2))))' />
+      </column>
+      <column caption='Hadevelopt' datatype='string' name='[HADEVELOPT]' role='dimension' type='nominal' />
+      <column caption='Housing Psa' datatype='integer' name='[HOUSING_PSA]' role='measure' type='quantitative' />
+      <column caption='Jurisdiction Code' datatype='integer' name='[JURISDICTION_CODE]' role='dimension' type='ordinal' />
+      <column caption='Juris Desc' datatype='string' name='[JURIS_DESC]' role='dimension' type='nominal' />
+      <column caption='Ky Cd' datatype='integer' name='[KY_CD]' role='measure' type='quantitative' />
+      <column caption='Law Cat Cd' datatype='string' name='[LAW_CAT_CD]' role='dimension' type='nominal' />
+      <column caption='Loc Of Occur Desc' datatype='string' name='[LOC_OF_OCCUR_DESC]' role='dimension' type='nominal' />
+      <column caption='Lat Lon' datatype='string' name='[Lat_Lon]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Ofns Desc' datatype='string' name='[OFNS_DESC]' role='dimension' type='nominal' />
+      <column caption='Parks Nm' datatype='string' name='[PARKS_NM]' role='dimension' type='nominal' />
+      <column caption='Patrol Boro' datatype='string' name='[PATROL_BORO]' role='dimension' type='nominal' />
+      <column caption='Pd Cd' datatype='integer' name='[PD_CD]' role='measure' type='quantitative' />
+      <column caption='Pd Desc' datatype='string' name='[PD_DESC]' role='dimension' type='nominal' />
+      <column caption='Prem Typ Desc' datatype='string' name='[PREM_TYP_DESC]' role='dimension' type='nominal' />
+      <column caption='Rpt Dt' datatype='date' name='[RPT_DT]' role='dimension' type='ordinal' />
+      <column caption='Station Name' datatype='string' name='[STATION_NAME]' role='dimension' type='nominal' />
+      <column caption='Susp Age Group' datatype='string' name='[SUSP_AGE_GROUP]' role='dimension' type='nominal' />
+      <column caption='Susp Race' datatype='string' name='[SUSP_RACE]' role='dimension' type='nominal' />
+      <column caption='Susp Sex' datatype='string' name='[SUSP_SEX]' role='dimension' type='nominal' />
+      <column caption='Transit District' datatype='integer' name='[TRANSIT_DISTRICT]' role='measure' type='quantitative' />
+      <column caption='Vic Age Group' datatype='string' name='[VIC_AGE_GROUP]' role='dimension' type='nominal' />
+      <column caption='Vic Race' datatype='string' name='[VIC_RACE]' role='dimension' type='nominal' />
+      <column caption='Vic Sex' datatype='string' name='[VIC_SEX]' role='dimension' type='nominal' />
+      <column caption='X Coord Cd' datatype='integer' name='[X_COORD_CD]' role='measure' type='quantitative' />
+      <column caption='Y Coord Cd' datatype='integer' name='[Y_COORD_CD]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='NYPD_Complaint_Data_Historic.csv' datatype='table' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+      <column-instance column='[BORO_NM]' derivation='None' name='[none:BORO_NM:nk]' pivot='key' type='nominal' />
+      <column-instance column='[LAW_CAT_CD]' derivation='None' name='[none:LAW_CAT_CD:nk]' pivot='key' type='nominal' />
+      <group caption='Vic Age Group Set' name='[Vic Age Group Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[VIC_AGE_GROUP]' member='&quot;&lt;18&quot;' />
+          <groupfilter function='member' level='[VIC_AGE_GROUP]' member='&quot;18-24&quot;' />
+          <groupfilter function='member' level='[VIC_AGE_GROUP]' member='&quot;25-44&quot;' />
+          <groupfilter function='member' level='[VIC_AGE_GROUP]' member='&quot;45-64&quot;' />
+          <groupfilter function='member' level='[VIC_AGE_GROUP]' member='&quot;65+&quot;' />
+          <groupfilter function='member' level='[VIC_AGE_GROUP]' member='&quot;UNKNOWN&quot;' />
+        </groupfilter>
+      </group>
+      <group caption='Vic Race Set' name='[Vic Race Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[VIC_RACE]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[VIC_RACE]' member='%null%' />
+            <groupfilter function='member' level='[VIC_RACE]' member='%null%' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Vic Sex Set' name='[Vic Sex Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[VIC_SEX]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[VIC_SEX]' member='%null%' />
+            <groupfilter function='member' level='[VIC_SEX]' member='%null%' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:BORO_NM:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;QUEENS&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;MANHATTAN&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BROOKLYN&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;STATEN ISLAND&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BRONX&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:LAW_CAT_CD:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;FELONY&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;VIOLATION&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MISDEMEANOR&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='CMPLNT_NUM' />
+        <field-sort-custom-order field='CMPLNT_FR_DT' />
+        <field-sort-custom-order field='CMPLNT_FR_TM' />
+        <field-sort-custom-order field='CMPLNT_TO_DT' />
+        <field-sort-custom-order field='CMPLNT_TO_TM' />
+        <field-sort-custom-order field='ADDR_PCT_CD' />
+        <field-sort-custom-order field='RPT_DT' />
+        <field-sort-custom-order field='KY_CD' />
+        <field-sort-custom-order field='OFNS_DESC' />
+        <field-sort-custom-order field='PD_CD' />
+        <field-sort-custom-order field='PD_DESC' />
+        <field-sort-custom-order field='CRM_ATPT_CPTD_CD' />
+        <field-sort-custom-order field='LAW_CAT_CD' />
+        <field-sort-custom-order field='BORO_NM' />
+        <field-sort-custom-order field='LOC_OF_OCCUR_DESC' />
+        <field-sort-custom-order field='PREM_TYP_DESC' />
+        <field-sort-custom-order field='JURIS_DESC' />
+        <field-sort-custom-order field='JURISDICTION_CODE' />
+        <field-sort-custom-order field='PARKS_NM' />
+        <field-sort-custom-order field='HADEVELOPT' />
+        <field-sort-custom-order field='HOUSING_PSA' />
+        <field-sort-custom-order field='X_COORD_CD' />
+        <field-sort-custom-order field='Y_COORD_CD' />
+        <field-sort-custom-order field='SUSP_AGE_GROUP' />
+        <field-sort-custom-order field='SUSP_RACE' />
+        <field-sort-custom-order field='SUSP_SEX' />
+        <field-sort-custom-order field='TRANSIT_DISTRICT' />
+        <field-sort-custom-order field='Latitude' />
+        <field-sort-custom-order field='Longitude' />
+        <field-sort-custom-order field='Lat_Lon' />
+        <field-sort-custom-order field='PATROL_BORO' />
+        <field-sort-custom-order field='STATION_NAME' />
+        <field-sort-custom-order field='VIC_AGE_GROUP' />
+        <field-sort-custom-order field='VIC_RACE' />
+        <field-sort-custom-order field='VIC_SEX' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='input_long' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='-73.94106415099996'>
+          <calculation class='tableau' formula='-73.94106415099996' />
+        </column>
+        <column caption='input_lat' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='40.81087724100007'>
+          <calculation class='tableau' formula='40.81087724100007' />
+        </column>
+        <column caption='radius (in km)' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='2.'>
+          <calculation class='tableau' formula='2.' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='NYPD_Complaint_Data_Historic.csv' id='NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE'>
+            <properties context=''>
+              <relation connection='textscan.05fibks04f0dgr1gkawp9026ewh2' name='NYPD_Complaint_Data_Historic.csv' table='[NYPD_Complaint_Data_Historic#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CMPLNT_NUM' ordinal='0' />
+                  <column datatype='date' name='CMPLNT_FR_DT' ordinal='1' />
+                  <column datatype='datetime' name='CMPLNT_FR_TM' ordinal='2' />
+                  <column datatype='date' name='CMPLNT_TO_DT' ordinal='3' />
+                  <column datatype='datetime' name='CMPLNT_TO_TM' ordinal='4' />
+                  <column datatype='integer' name='ADDR_PCT_CD' ordinal='5' />
+                  <column datatype='date' name='RPT_DT' ordinal='6' />
+                  <column datatype='integer' name='KY_CD' ordinal='7' />
+                  <column datatype='string' name='OFNS_DESC' ordinal='8' />
+                  <column datatype='integer' name='PD_CD' ordinal='9' />
+                  <column datatype='string' name='PD_DESC' ordinal='10' />
+                  <column datatype='string' name='CRM_ATPT_CPTD_CD' ordinal='11' />
+                  <column datatype='string' name='LAW_CAT_CD' ordinal='12' />
+                  <column datatype='string' name='BORO_NM' ordinal='13' />
+                  <column datatype='string' name='LOC_OF_OCCUR_DESC' ordinal='14' />
+                  <column datatype='string' name='PREM_TYP_DESC' ordinal='15' />
+                  <column datatype='string' name='JURIS_DESC' ordinal='16' />
+                  <column datatype='integer' name='JURISDICTION_CODE' ordinal='17' />
+                  <column datatype='string' name='PARKS_NM' ordinal='18' />
+                  <column datatype='string' name='HADEVELOPT' ordinal='19' />
+                  <column datatype='integer' name='HOUSING_PSA' ordinal='20' />
+                  <column datatype='integer' name='X_COORD_CD' ordinal='21' />
+                  <column datatype='integer' name='Y_COORD_CD' ordinal='22' />
+                  <column datatype='string' name='SUSP_AGE_GROUP' ordinal='23' />
+                  <column datatype='string' name='SUSP_RACE' ordinal='24' />
+                  <column datatype='string' name='SUSP_SEX' ordinal='25' />
+                  <column datatype='integer' name='TRANSIT_DISTRICT' ordinal='26' />
+                  <column datatype='real' name='Latitude' ordinal='27' />
+                  <column datatype='real' name='Longitude' ordinal='28' />
+                  <column datatype='string' name='Lat_Lon' ordinal='29' />
+                  <column datatype='string' name='PATROL_BORO' ordinal='30' />
+                  <column datatype='string' name='STATION_NAME' ordinal='31' />
+                  <column datatype='string' name='VIC_AGE_GROUP' ordinal='32' />
+                  <column datatype='string' name='VIC_RACE' ordinal='33' />
+                  <column datatype='string' name='VIC_SEX' ordinal='34' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYPD_Complaint_Data_Historic' name='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue'>
+            <column caption='Law Cat Cd' datatype='string' name='[LAW_CAT_CD]' role='dimension' type='nominal' />
+            <column caption='Rpt Dt' datatype='date' name='[RPT_DT]' role='dimension' type='ordinal' />
+            <column caption='Vic Age Group' datatype='string' name='[VIC_AGE_GROUP]' role='dimension' type='nominal' />
+            <column caption='Vic Race' datatype='string' name='[VIC_RACE]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='NYPD_Complaint_Data_Historic.csv' datatype='integer' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column caption='Vic Sex' datatype='string' name='[VIC_SEX]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='NYPD_Complaint_Data_Historic.csv' datatype='table' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LAW_CAT_CD]' derivation='None' name='[none:LAW_CAT_CD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RPT_DT]' derivation='Year' name='[yr:RPT_DT:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Age Group Set]'>
+            <groupfilter function='level-members' level='[VIC_AGE_GROUP]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Race Set]'>
+            <groupfilter function='level-members' level='[VIC_RACE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Sex Set]'>
+            <groupfilter function='level-members' level='[VIC_SEX]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Race Set]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Sex Set]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Age Group Set]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]' />
+              <color column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Multiple Values]</rows>
+        <cols>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[yr:RPT_DT:ok]</cols>
+      </table>
+      <simple-id uuid='{1059FFB9-ED19-4464-8AE5-D2C7BBB005B8}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYPD_Complaint_Data_Historic' name='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue'>
+            <column caption='Cmplnt Num' datatype='integer' name='[CMPLNT_NUM]' role='dimension' type='ordinal' />
+            <column caption='Law Cat Cd' datatype='string' name='[LAW_CAT_CD]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='NYPD_Complaint_Data_Historic.csv' datatype='integer' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column caption='Parks Nm' datatype='string' name='[PARKS_NM]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='NYPD_Complaint_Data_Historic.csv' datatype='table' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LAW_CAT_CD]' derivation='None' name='[none:LAW_CAT_CD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PARKS_NM]' derivation='None' name='[none:PARKS_NM:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PARKS_NM:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([CMPLNT_NUM])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:PARKS_NM:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:PARKS_NM:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:PARKS_NM:nk]' member='&quot;NA&quot;' />
+                    <groupfilter function='member' level='[none:PARKS_NM:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PARKS_NM:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;CENTRAL PARK&quot;</bucket>
+              <bucket>&quot;FLUSHING MEADOWS CORONA PARK&quot;</bucket>
+              <bucket>&quot;CONEY ISLAND BEACH &amp; BOARDWALK&quot;</bucket>
+              <bucket>&quot;WASHINGTON SQUARE PARK&quot;</bucket>
+              <bucket>&quot;RIVERSIDE PARK&quot;</bucket>
+              <bucket>&quot;PROSPECT PARK&quot;</bucket>
+              <bucket>&quot;UNION SQUARE PARK&quot;</bucket>
+              <bucket>&quot;MARCUS GARVEY PARK&quot;</bucket>
+              <bucket>&quot;RANDALL&apos;S ISLAND PARK&quot;</bucket>
+              <bucket>&quot;SARA D. ROOSEVELT PARK&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PARKS_NM:nk]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]' />
+              <color column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Multiple Values]</rows>
+        <cols>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PARKS_NM:nk]</cols>
+      </table>
+      <simple-id uuid='{4BD24DEF-E2FD-40D6-8E2E-3C782CE84C1C}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYPD_Complaint_Data_Historic' name='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue'>
+            <column caption='Cmplnt Num' datatype='integer' name='[CMPLNT_NUM]' role='dimension' type='ordinal' />
+            <column caption='Law Cat Cd' datatype='string' name='[LAW_CAT_CD]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='NYPD_Complaint_Data_Historic.csv' datatype='integer' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column caption='Prem Typ Desc' datatype='string' name='[PREM_TYP_DESC]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='NYPD_Complaint_Data_Historic.csv' datatype='table' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LAW_CAT_CD]' derivation='None' name='[none:LAW_CAT_CD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PREM_TYP_DESC]' derivation='None' name='[none:PREM_TYP_DESC:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PREM_TYP_DESC:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([CMPLNT_NUM])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:PREM_TYP_DESC:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:PREM_TYP_DESC:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:PREM_TYP_DESC:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PREM_TYP_DESC:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;STREET&quot;</bucket>
+              <bucket>&quot;RESIDENCE - APT. HOUSE&quot;</bucket>
+              <bucket>&quot;RESIDENCE-HOUSE&quot;</bucket>
+              <bucket>&quot;RESIDENCE - PUBLIC HOUSING&quot;</bucket>
+              <bucket>&quot;OTHER&quot;</bucket>
+              <bucket>&quot;COMMERCIAL BUILDING&quot;</bucket>
+              <bucket>&quot;CHAIN STORE&quot;</bucket>
+              <bucket>&quot;TRANSIT - NYC SUBWAY&quot;</bucket>
+              <bucket>&quot;DEPARTMENT STORE&quot;</bucket>
+              <bucket>&quot;GROCERY/BODEGA&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PREM_TYP_DESC:nk]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Multiple Values]</rows>
+        <cols>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PREM_TYP_DESC:nk]</cols>
+      </table>
+      <simple-id uuid='{438C27F4-A994-401E-A14F-FB48C40230EB}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYPD_Complaint_Data_Historic' name='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue'>
+            <column caption='Boro Nm' datatype='string' name='[BORO_NM]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='NYPD_Complaint_Data_Historic.csv' datatype='integer' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column caption='Law Cat Cd' datatype='string' name='[LAW_CAT_CD]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='NYPD_Complaint_Data_Historic.csv' datatype='table' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BORO_NM]' derivation='None' name='[none:BORO_NM:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LAW_CAT_CD]' derivation='None' name='[none:LAW_CAT_CD:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:BORO_NM:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:BORO_NM:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:BORO_NM:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;BROOKLYN&quot;</bucket>
+              <bucket>&quot;MANHATTAN&quot;</bucket>
+              <bucket>&quot;BRONX&quot;</bucket>
+              <bucket>&quot;QUEENS&quot;</bucket>
+              <bucket>&quot;STATEN ISLAND&quot;</bucket>
+              <bucket>%null%</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Multiple Values]</rows>
+        <cols>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]</cols>
+      </table>
+      <simple-id uuid='{7B178721-931B-4479-BDE2-BBFD4E81D72C}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYPD_Complaint_Data_Historic' name='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue'>
+            <column caption='Boro Nm' datatype='string' name='[BORO_NM]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='NYPD_Complaint_Data_Historic.csv' datatype='integer' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column caption='Rpt Dt' datatype='date' name='[RPT_DT]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='NYPD_Complaint_Data_Historic.csv' datatype='table' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BORO_NM]' derivation='None' name='[none:BORO_NM:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RPT_DT]' derivation='Year' name='[yr:RPT_DT:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:BORO_NM:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:BORO_NM:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:BORO_NM:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Multiple Values]</rows>
+        <cols>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[yr:RPT_DT:ok]</cols>
+      </table>
+      <simple-id uuid='{488763EB-BAAF-4CAC-B81E-77C5A5E26ED9}' />
+    </worksheet>
+    <worksheet name='interactive barplot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYPD_Complaint_Data_Historic' name='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='input_long' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='-73.94106415099996'>
+              <calculation class='tableau' formula='-73.94106415099996' />
+            </column>
+            <column caption='input_lat' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='40.81087724100007'>
+              <calculation class='tableau' formula='40.81087724100007' />
+            </column>
+            <column caption='radius (in km)' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='2.'>
+              <calculation class='tableau' formula='2.' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0q1d34f0fhgu9v1ezdwwq0wm0mue'>
+            <column caption='crime_nearby' datatype='boolean' name='[Calculation_2079537154872627200]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_2079537154880253955] &lt; [Parameters].[Parameter 3] THEN TRUE ELSE FALSE END' />
+            </column>
+            <column caption='dlat' datatype='real' name='[Calculation_2079537154876203009]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RADIANS([Latitude]) - RADIANS([Parameters].[Parameter 2])' />
+            </column>
+            <column caption='dlon' datatype='real' name='[Calculation_2079537154880131074]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RADIANS([Longitude]) - RADIANS([Parameters].[Parameter 1])' />
+            </column>
+            <column caption='distance_to_crime' datatype='real' name='[Calculation_2079537154880253955]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='63788.8 * 2 * ASIN(SQRT(SQUARE(SIN([Calculation_2079537154876203009]/2)) + COS([Parameters].[Parameter 2]) * COS([Latitude]) * SQUARE(SIN([Calculation_2079537154880131074]/2))))' />
+            </column>
+            <column caption='Law Cat Cd' datatype='string' name='[LAW_CAT_CD]' role='dimension' type='nominal' />
+            <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='NYPD_Complaint_Data_Historic.csv' datatype='integer' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column caption='Rpt Dt' datatype='date' name='[RPT_DT]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='NYPD_Complaint_Data_Historic.csv' datatype='table' name='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2079537154872627200]' derivation='None' name='[none:Calculation_2079537154872627200:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LAW_CAT_CD]' derivation='None' name='[none:LAW_CAT_CD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RPT_DT]' derivation='Year' name='[yr:RPT_DT:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[__tableau_internal_object_id__].[cnt:NYPD_Complaint_Data_Historic.csv_1215D2161FA64D3980B3936B91DE35DE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[Parameters].[Parameter 2]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:Calculation_2079537154872627200:nk]'>
+            <groupfilter function='member' level='[none:Calculation_2079537154872627200:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</column>
+            <column>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:Calculation_2079537154872627200:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Multiple Values]</rows>
+        <cols>([federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:Calculation_2079537154872627200:nk] / [federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[yr:RPT_DT:ok])</cols>
+      </table>
+      <simple-id uuid='{83745124-2C29-46B3-8C4B-D5EEE4C19705}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='235'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Age Group Set]' type='filter' />
+            <card param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Sex Set]' type='filter' />
+            <card param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Race Set]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Susp Race Set]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Susp Sex Set]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Age Group Set]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Race Set]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[Vic Sex Set]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:Calculation_881016699122438145:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:SUSP_AGE_GROUP:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[yr:RPT_DT:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FF800691-F774-4D7E-BC5B-C074775D99A8}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:OFNS_DESC:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PARKS_NM:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DD34915F-9D03-4483-80D9-F83FDD547B0D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PREM_TYP_DESC:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8317DC11-0390-4B42-B2D4-A03014B4F9FF}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4FD55FA5-DA5B-437F-9B20-9398AFEE39E5}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[:Measure Names]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:BORO_NM:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[yr:RPT_DT:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{07D4B530-70F7-4CE8-AB30-F1944073A787}' />
+    </window>
+    <window class='worksheet' name='interactive barplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 3]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:Calculation_2079537154872627200:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:LAW_CAT_CD:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[none:PD_DESC:nk]</field>
+            <field>[federated.0q1d34f0fhgu9v1ezdwwq0wm0mue].[yr:RPT_DT:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A72F6AC2-B04B-40A4-8240-CFED369442DC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      8R/WNzv0dhm8zAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAMuklEQVR4nO3dWW8c2XnG8f+pqt7IbpLdTTbFTSONlpmM7Rk543iQDY4RIKuRm+QjGIGv
+      8hHyDRIgV7nLdZKbIAnGMGIEDjIInASxMXZmoGUsaSRxEUmRosjeq+qcXIgjKdqG1VKTbJ7n
+      BxCtpqqaR1A/fU413/O2cc45RDxkjDHBUQ9C5CgpAOI1BeCIJUlMrx/zspVoEvfpdrvYp45x
+      1tLr9p75vhxcdNQD8N2//vD7JO2Ed37j20wWQtq796nW62xsbBNFhnpjnq1bl/mX/7rCd/7g
+      dxkrwM7mfSYac/Q3rvHRz1eZqNZ47+I8+Uqd3c271Gdn2djYYun0EqE56n/h8WZ0EXy0fvDh
+      PxAVq3Tbu3zl4hz//KNPeO9cnc1uyNTkOGPFBT549xQffXyVqd46nbEy28sx+ckcl87W2bDT
+      LF/+iNt37nP+7QusLq9Rmarw1a9/kzcWZhWAlzDGGM0AR+ziO5d48+xZPr95k6WlU1xaa3F6
+      aY6FoEBprEDaz2GiPG8szBElJaJqnas/+SG/+f7vMFaxrP/0Cr/0jd+iXr/K5MwcpUKOWn2G
+      9dU1luYVgC8z1BnAOYcx+h94XfrdDrligaRvyeX12vWqjDFmKAFwzmGtJU1TgkDX2XI85XK5
+      LEsgx/Ln13nQN0zmHUlUJkqa7CURE7mU3X5AozZJEnepN+aIwhCAcP9W5DjK9PI83WgwXsxz
+      d32TXr9LSp6xEPqEVCLD6urn3G/GRIGWPTIaDh4AB5c//ZROP6E6NUmz2Sbu7nK/1cV2m9xr
+      dqhPz1EMEuJUbyzJaBjqRXCaploCybGlWiDxngIgXlMAxGsKgHjtUH6d+JOrqyxv7mY65zu/
+      dpFQv0STITuUAPzbx7f495/dynTO739wgVDPfxkyPcXEawqAeE0BEK9lKobb3lijmUQszU6x
+      vrVHKUxoJhGV/WK42sQYLk0ojFdUDyQjIdNFcGGswr21DdZWWtxr9xnP5XDW0gkMoXXcun+X
+      IFfm4rkKaZpirQV46X7XF0ltSppmPk0kk4MHwMHd1WVqM3Ms37jGVrNPcW6G1ELkHD1rKJbG
+      6ff6OCAIApxzBEHAIHtiAhNoL4EMXaYZYGJigm63x6X3v0m318PFPXo2pBimdNKA8WIenMU6
+      iAKDMWZ/R1j2BDw+V2R4Dh4AY5g5tfDobrFQgEKB0hf3X/PARA6D1hjiNQVAvKYAiNcUAPGa
+      AiBeUwDEawqAeE0BEK8pAOI1BUC8pgCI1zI3x91up1RLATtdqOTSh81xo4TdOGS2PkXc6zC7
+      sKT9ADISMlWDVms1bD6mOh5BO8b2YibCFBfkqEWO9fU7RMU68+ZhW8Q0TXHO4ZzNPLAkTQiM
+      eozKcGXaD3Dj+nVylWl27t6jMNWgYDv7O8IStvshs7NLxL0OiYXcE+3RB+nAGIURUaS+ojJc
+      mcqhv/b1X9m/c3Y4oxE5ZLoIFq8pAOI1BUC8pgCI1xQA8ZoCIF5TAMRrCoB4TQEQrykA4jUF
+      QLyWqRz67vItmklIOUroBeOMmR7NJKIcJezFIdNTZWwSU56qqRxaRkK2cujpGZor63SIsHaX
+      ponAxuwlhsjG3L61TlSq8Va1pnJoGQmZyqGvfPoJ5ZlFurtbxEGeAh06acRYlLCXhFSrM/Ra
+      zYct01UOLSMg0wzw9lfexRKQm2vgTECAxTpDYBypM0RhALiBPg9A5Chk2g9QKJae+mZI+OhP
+      IqNH7wKJ1xQA8ZoCIF5TAMRrCoB4TQEQrykA4jUFQLymAIjXFADxmgIgXsu0H2D91lV6Y/M0
+      167TD0qMh/F+c9yU3X7A7HSVuNtm8cyb2g8gIyFDAAyzjVmWWwYMOJeSL01ScxZroFGA7a01
+      okKNUO3RZURk+4CM1TXutkNqhSKYIpGJaaYRlShhNwlZWDhDGvfUHl1GRqYZYPHcOyy+4G/n
+      X8twRA6XLoLFawqAeE0BEK8pAOI1BUC8pgCI1xQA8VqmvkCDCrCEpK/0GH/xdz/myu17Bz5+
+      rJDjr/7s917pZ8rJdygB+N7EP/HdmQ8znZMzf8KT3Ybu73XYuN868PnjxVymnyd+0hJIvKYA
+      iNcyFcM1d7aw+QnoPWCn45gsOJppjsp+e/RqpQQ2IT9WUTm0jIRM1wAm7fKgXWDz5k0Wzp7n
+      3s4Ozlo6gSGwjtv31zBRmYvnKqRpirUPy6Cdy17WnKYpxjy+cB70MUReJlMAwjCk2+xSLJVY
+      WVmhUiqQWIicI7aQL4zR7/dxQBAEOOcIgoBB5oIgCDDB4xWaGaDldBBohScvlykAe11HnoTF
+      M6dpxYbxnKNrI4pBSicNKJfy4CzWQRQYjHn4NUi/9EfnvoJXPV9Ovkz7AWZOPa76L73gVmSU
+      aI0gXlMAxGsKgHhNARCvKQDiNQVAvKYAiNcUAPGaAiBeUwDEawqAeC1be/Tbn5GWF6hGXa4t
+      bzOZT9lLIia+aI9enyLudZhdWNJ+ABkJ2dqjz8xwp2W5vbpBgMVEE0yEKS7IUQsd6+t3iIp1
+      5p9uj26zt0dPk4Qn9wQPsh8gSZLM54hfsrVHX1lhpRmyWCvS3NrD5pq00hzlKGE7DmnMLpL0
+      Os+0R48HqMsPowgTPR7eIKXNUXQoe/5lhGVrj37+q4/aoy+eHsp4RA7VC16aLT/427/nP/7n
+      Y/qHOx6RQ/XCtUl5ssTm9oPDaRwkckReGID6/AJBt/uK/dxEjreXXp2WK+WBNrSLjIrnBuDa
+      z3/KnfV7mFALIDnZnhuAi+/+Mvlek91WG31QqZxkz32J/8XlT6icWiBtO9VKyIn23Of32Qtv
+      0dze4Mb1W7oIlhPtuTPAjWtXmH7jbb7xrTfIH/aIRA7RcwNw4Z33DnscIkdCS3zx2kDl0OmD
+      VR70oBylNJOIyhPl0Em/Q2Ne5dAyGjKXQy+3HdVaHVp9bD+m8pxy6DmVQ8uIyFwOvdwM2Uqb
+      FKsN8mn70QdkqBxaRtHA5dAiJ8HIvER+q/gz3hq7euDj88Ux4I+HNyA5EUYmAL9e/F/S8f8+
+      +AmFieENRk4MvQ0qXlMAxGsKgHhNARCvKQDiNQVAvKYAiNcUAPGaAiBey/Sb4F6nhQsL2F6T
+      JCiQI6ZnQ4qBpZMGjBdz4CxhrkCocmgZAZmqQTs76+xG03S310n3T44t5EJHmhoKpTxxP+X8
+      hXMPy6D3vxiglPmZ8zI/hBuohFr8kqkadGqqSrMFYS6PsTGBichbC4GhYBzddhOicQxgrcU5
+      t3+bfWDWWswT+wjcAA1a7AD7EMQv2fYD3L3HTj9gbqpIHFYp0n3UHn0vDmlU5sElz+wHMAMs
+      h8IwxISPN8Rk3w9gCJ84X+R5su0HOHvhmf0AU/u3k69rRCKHSO8CidcUAPGaAiBeUwDEawqA
+      eE0BEK8pAOI1BUC8pgCI1xQA8ZoCIF7L3hnOOT6/fo2eKVKOkv/XHr1RmySNe1RnZtUeXUbC
+      AK0RHe12mzi0FMfHKQSWng0oh7CycpNcqc504zi0R3dqjy5faqDeoKm19G1Cv/Pg4QwQJezE
+      IY3pU/TbraG0R+8PUA6t9ujyZbI/Q0zA1y69P4ShDN+HP77Gbqt34OMnxov84a9eGOKI5Kh5
+      9RL5/f/8Bcubuwc+fnFmQgE44fQukHhNARCvKQDiNQVAvKYAiNcUAPGaAiBeUwDEawqAeE0B
+      EK8NVAph05TUOUIDFkMAWAfBfgm0MWaAXp4ih2+g/QDXLn9KeXqO1vZdWklIOUppxQH1+iT9
+      dpuz5y8Q6vkvI2CAGcDSarfZW1tjemqSvEtxxlAvOh7c3yQsTBGY47kfQHsK5GkDlUMvLc6z
+      2w8Yz1uaSfHhjrA44PTpc7i0f2z3AwzSYv3px/jzv/kR3d7BQ3F+ocaf/tFolo/7YIAZwNCY
+      P01j/94XtzOva0TH3GfL27S78YGPL+T0GQXHmd4FEq8pAOI1r3aEvRmtUs5tHfj4Rq4+xNHI
+      ceBVAL438Y/Y5OaBjw8qbwLfHd6A5MhpCSReUwDEawqAeE0BEK95dRH8OoRYQtIDHx+Y7J9w
+      L4dHAcjor6f/Enp7Bz4+nPwA+O3hDUheiZZA4rWBZoDO3jafLW8zmUvYe6I9+mx9iqTfpTG/
+      qPboMhIyB8A5y/LqJgEpRBUqYYoLctRCx/r6HaJinbljWw6d8REcz5ZDZ3wQ51RSfZwNNAMU
+      CxE7Wx3Goiat/RlgOw5pNBaJe51jXA4NWZ6+xvBsi/WM4zBGbdqPs8z/M8YELJ05x9KZIYxG
+      5JDpIli8NjJzc7xTId6sHvh4U6oMcTRyUoxMALprM/RuLB34eDM+hoqZ5ctoCSReUwDEawqA
+      eE0BEK8pAOI1BUC8pgCI1xQA8dr/ARt6veJ7yfo3AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 6' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='interactive barplot' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
