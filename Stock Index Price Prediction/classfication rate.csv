@@ -1,0 +1,25 @@
+Nasdaq1XGBoost,Nasdaq1SVM,Nasdaq1RandomForest,Nasdaq3XGBoost,Nasdaq3SVM,Nasdaq3RandomForest,Nasdaq6XGBoost,Nasdaq6SVM,Nasdaq6RandomForest,Dow Jones1XGBoost,Dow Jones1SVM,Dow Jones1RandomForest,Dow Jones3XGBoost,Dow Jones3SVM,Dow Jones3RandomForest,Dow Jones6XGBoost,Dow Jones6SVM,Dow Jones6RandomForest,S&P 5001XGBoost,S&P 5001SVM,S&P 5001RandomForest,S&P 5003XGBoost,S&P 5003SVM,S&P 5003RandomForest,S&P 5006XGBoost,S&P 5006SVM,S&P 5006RandomForest
+True,True,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True
+True,False,False,False,True,False,True,True,True,True,False,True,False,False,False,True,True,True,True,False,False,False,True,False,True,True,True
+True,True,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True
+True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+True,True,True,True,True,True,True,True,True,True,False,False,True,False,True,True,True,True,True,False,False,True,True,True,True,True,True
+False,False,True,True,True,True,True,True,True,False,False,True,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True
+True,True,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+False,False,False,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+True,True,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+True,True,True,True,False,True,True,True,True,True,False,True,True,False,True,True,True,True,True,False,True,True,False,True,True,True,True
+True,True,True,True,True,True,False,False,False,False,False,True,True,True,True,True,True,True,True,False,True,True,True,True,True,True,True
+True,True,True,True,False,True,False,False,False,False,True,False,True,False,True,False,True,False,False,True,False,True,False,True,False,True,False
+True,False,False,True,True,True,False,False,False,True,False,True,True,True,True,False,True,False,True,True,True,True,True,True,False,False,False
+True,False,True,True,False,True,True,False,False,False,False,True,True,False,True,False,True,False,True,False,True,True,False,True,False,True,False
+False,False,False,False,True,False,True,True,False,False,True,False,False,True,False,False,True,False,True,False,True,False,True,False,False,True,False
+False,False,False,False,True,False,True,True,False,False,True,False,False,True,False,True,True,True,False,True,False,False,True,False,True,True,False
+True,False,False,True,True,False,True,False,True,False,True,False,True,True,False,True,True,True,True,False,False,True,True,False,True,True,True
+False,True,False,True,False,False,True,True,True,False,True,True,True,False,True,True,False,True,False,True,True,True,False,False,True,False,True
+False,True,True,True,True,True,True,True,True,False,False,False,True,True,True,False,True,True,False,False,False,True,True,True,True,True,True
+True,True,False,True,True,True,True,True,True,True,False,True,True,False,True,True,False,True,True,True,True,True,True,True,True,True,True
+True,False,True,False,False,False,True,True,True,True,True,True,False,False,False,False,False,False,True,False,True,False,False,False,True,True,True
+False,False,False,True,True,True,True,True,True,False,False,False,True,True,True,True,True,False,False,False,False,True,True,True,False,False,False
+False,True,False,False,False,True,True,False,True,True,False,False,False,False,True,True,True,False,True,False,False,False,False,True,False,True,False
+True,True,False,True,True,True,True,False,True,True,True,False,False,False,False,True,True,True,False,True,False,True,True,True,True,True,False
